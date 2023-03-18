@@ -1,6 +1,10 @@
-const Header = () => {
+import type { FC } from 'react';
+
+const Header: FC = () => {
   return (
-    <header></header>
+    <header>
+      <div>header</div>
+    </header>
   );
 };
 
