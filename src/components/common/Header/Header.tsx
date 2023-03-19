@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { css } from '@emotion/react'
 import TailwindLogo from '@/images/tailwind-logo.svg';
+import { mq } from '../../../utils/mediaQuery';
 
 const headerStyle = css`
   display: flex;
@@ -18,15 +19,14 @@ const headerStyle = css`
   }
 `;
 
-const menuListStyle = css`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 3rem;
-
-  padding: 0;
-`;
+const menuListStyle = css(mq({
+  display: ['none', 'none', 'flex'],
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  columnGap: '3rem',
+  padding: 0,
+}));
 
 const menuItemStyle = css`
   list-style: none;
