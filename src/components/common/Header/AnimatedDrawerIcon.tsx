@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { ForwardRefComponent, SVGMotionProps, motion } from "framer-motion";
+import { ForwardRefComponent, MotionProps, SVGMotionProps, motion } from "framer-motion";
 import { css } from "@emotion/react";
 import { mq } from "../../../utils/mediaQuery";
 
@@ -25,7 +25,7 @@ const Path: FC<pathProps> = (props) => (
   />
 );
 
-interface AnimatedDrawerIconProps {
+interface AnimatedDrawerIconProps extends MotionProps {
     toggle: () => void;
 }
 

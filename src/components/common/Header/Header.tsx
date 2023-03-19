@@ -4,7 +4,7 @@ import TailwindLogo from '@/images/tailwind-logo.svg';
 import HamburgerIcon from '@/images/hamburger.svg';
 import { mq } from '../../../utils/mediaQuery';
 import AnimatedDrawerIcon from './AnimatedDrawerIcon';
-import { motion, useCycle } from 'framer-motion';
+import { useCycle } from 'framer-motion';
 
 const headerStyle = css`
   padding: 1.5rem 2rem;
